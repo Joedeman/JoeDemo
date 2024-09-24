@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.summaries, .bike-brands, .shops {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.summaries h3, .bike-brands h3, .shops h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.summaries a, .bike-brands a, .shops a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.image-section {
+    grid-column: 2 / span 1;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.message {
+    grid-column: 2 / span 1;
+    text-align: center;
+}
+
+.message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.message p {
+    margin: 5px 0;
+}
